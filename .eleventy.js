@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
   
   // lazyImages and Files Minifier
   eleventyConfig.addPlugin(lazyImagesPlugin, {
-    appendInitScript: false, // Menonaktifkan penyertaan otomatis script lazysizes dari CDN
+    appendInitScript: false, // disable cdn lazyimages
   });
   eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
 
@@ -17,8 +17,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("tailwind.config.js");
 
   // Global data for root
-  eleventyConfig.addGlobalData("rootTitle", "SD Negeri 19 Periji");
-  eleventyConfig.addGlobalData("rootURL", "https://sdn19periji.sch.id");
+  eleventyConfig.addGlobalData("rootTitle", "11tySideNav");
+  eleventyConfig.addGlobalData("rootURL", "#");
 
   // Bypass dir
   const passthroughCopies = ["src/robots.txt", "src/asset/", "src/CNAME"];
