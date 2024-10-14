@@ -1,0 +1,16 @@
+<body class="2xl:container 2xl:mx-auto flex flex-wrap min-h-screen">
+  <div class="hidden lg:block lg:w-1/5 border-r border-base-100">
+    <ul class="menu sticky top-0">
+      <li><a>Photos</a></li>
+      <li><a>Blog</a></li>
+      <li><a>Link</a></li>
+    </ul>
+  </div>
+  <div class="w-full lg:w-4/5 flex flex-col">
+    {% include "base/navbar.html" %}
+    <div class="flex-grow">
+      {{ content }}
+    </div>
+    {% include "base/footer.html" %}
+  </div>
+</body>
