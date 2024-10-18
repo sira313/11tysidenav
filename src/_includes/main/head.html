@@ -24,6 +24,17 @@
   {% endif %}
   <link rel="stylesheet" href="/asset/css/style.css">
   <meta name="view-transition" content="same-origin">
+  <style>
+    /* Styling untuk menampilkan drawer */
+    [type="checkbox"]:checked ~ .drawer-sidebar {
+      transform: translateX(0);
+    }
+
+    /* Styling untuk menampilkan overlay */
+    [type="checkbox"]:checked ~ .drawer-overlay {
+      display: block;
+    }
+  </style>
   <!-- search -->
   <link rel="modulepreload" as="script" crossorigin href="/asset/js/search.js">
   <link rel="modulepreload" as="script" crossorigin href="/asset/js/search-global.js">

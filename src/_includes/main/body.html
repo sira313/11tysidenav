@@ -1,8 +1,24 @@
 <body class="max-h-screen min-h-screen sm:p-4 lg:p-8 bg-base-200 flex">
-  <div class="2xl:max-w-screen-xl mx-auto flex-grow flex overflow-hidden sm:rounded-xl shadow-xl">
-    <!-- Sidebar -->
-    <div class="hidden md:flex w-1/4 bg-base-300 p-4">
-      tes
+  <div class="2xl:max-w-screen-xl mx-auto flex-grow flex overflow-hidden sm:rounded-xl shadow-xl relative">
+    <!-- Input Checkbox untuk toggle drawer -->
+    <input type="checkbox" id="drawer-toggle" class="hidden">
+    <!-- Label untuk memicu drawer -->
+    <label for="drawer-toggle" class="md:hidden p-4 bg-blue-500 text-white cursor-pointer fixed top-0 left-0 z-30">
+      Menu
+    </label>
+    <!-- Overlay yang menutup drawer saat diklik -->
+    <label for="drawer-toggle" class="drawer-overlay fixed inset-0 bg-black bg-opacity-50 z-30 hidden"></label>
+    <!-- Sidebar (Drawer) -->
+    <div class="drawer-sidebar fixed inset-y-0 left-0 w-64 bg-base-300 p-4 transform -translate-x-full transition-transform duration-300 ease-in-out z-40 md:relative md:translate-x-0 md:w-1/4">
+      <div>
+        <h2 class="text-lg font-semibold mb-4">Sidebar Menu</h2>
+        <ul class="space-y-2 menu">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+          <li><a href="#">Item 4</a></li>
+        </ul>
+      </div>
     </div>
     <!-- Main Content -->
     <div class="md:w-3/4 bg-base-100 p-4 overflow-x-auto overflow-y-auto max-h-screen">
