@@ -1,10 +1,12 @@
-<body class="min-h-screen sm:p-4 lg:p-8 bg-base-200 flex">
+<body class="max-h-screen min-h-screen sm:p-4 lg:p-8 bg-base-200 flex">
   <div class="2xl:max-w-screen-xl mx-auto flex-grow flex overflow-hidden sm:rounded-xl shadow-xl">
-    <div class="hidden lg:flex w-1/4 bg-base-300 p-4">
+    <!-- Sidebar -->
+    <div class="hidden md:flex w-1/4 bg-base-300 p-4">
       tes
     </div>
-    <div class="max-h-screen lg:w-3/4 bg-base-100 p-4 overflow-x-auto">
-      content
+    <!-- Main Content -->
+    <div class="md:w-3/4 bg-base-100 p-4 overflow-x-auto overflow-y-auto max-h-screen">
+      {{ content }}
     </div>
   </div>
 </body>
